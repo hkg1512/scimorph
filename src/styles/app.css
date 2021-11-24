@@ -1,0 +1,156 @@
+/*-------------------------------------
+FONTS 
+--------------------------------------*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/*-------------------------------------
+CSS VARIABLES
+--------------------------------------*/
+:root {
+  --background-color: #ecf0f3;
+}
+/*-------------------------------------
+GLOBALS
+--------------------------------------*/
+body {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background-color: var(--background-color); 
+}
+
+
+/*-------------------------------------
+HEADER
+--------------------------------------*/
+.header {
+  font-family: inherit;
+  width: 100%;
+  text-align: center;
+}
+.header h3{
+  font-size: 25px;
+  color:rgba(16, 16, 16, 0.5)
+}
+.header i{
+  margin-right: 5px;
+}
+
+
+/*-------------------------------------
+SCI CALC
+--------------------------------------*/
+.container {
+  width: 80vw;
+  height: auto;
+  padding: 10px;
+  border-radius: 10px;
+  box-shadow: 12px 12px 20px #cbced1, -12px -12px 20px #ffffff;
+}
+.display #screen {
+  font-family: inherit;
+  font-weight: inherit;
+  width: 98%;
+  height: 70px;
+  font-size: 35px;
+  outline: none;
+  border: none;
+  text-align: right;
+  padding-right: .5rem;
+  background: #ecf0f3; 
+  border-radius: 5px;
+  box-shadow: inset 8px 8px 8px #cbcde1, 
+              inset -8px -8px 8px #ffffff ;
+}
+.btns {
+  width: 100%;
+  margin-top: 1.7rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.btns .row {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.btns .row button {
+  cursor: pointer;
+  font-family: inherit;
+  font-weight: inherit;
+  width: 200px;
+  height: 50px;
+  font-size: 16px;
+  border: none;
+  outline: none;
+  margin: 5px;
+  border-radius: 5px;
+  box-shadow: 5px 5px 8px rgba(16, 16, 16, 0.1), -5px -5px 8px #ffffff;
+  transition: all .3s ease;
+}
+.btns .row button:hover {
+  box-shadow: inset 8px 8px 8px #cbcde1, 
+              inset -8px -8px 8px #ffffff;
+  background: #fff;
+}
+.btns .row button .subscript {
+  font-size: 12px;
+  position: relative;
+  bottom: .4rem;
+  right: .1rem;
+}
+.btns .row #eval {
+  background-color: #33ccff;
+  color: #222;
+  box-shadow: inset 8px 8px 8px #66d9ff, inset -8px -8px 8px #00ace6;
+}
+.btns .row #eval:hover {
+  box-shadow: inset 8px 8px 8px #00ace6, inset -8px -8px 8px #66d9ff;
+}
+
+.btns .row #ce {
+  background-color: #ff3399;
+  color: #222;
+}
+.btns .row #ce:hover {
+  box-shadow: inset 8px 8px 8px #e60073, inset -8px -8px 8px #ff3399;
+}
+
+.btns .row #ac {
+  background-color: #33cc33;
+  color: #222;
+}
+.btns .row #ac:hover {
+  box-shadow: inset 8px 8px 8px #2eb82e, inset -8px -8px 8px #33cc33;
+}
+
+
+/*-------------------------------------
+FOOTER
+--------------------------------------*/
+.footer {
+  margin-top: auto;
+  font-family: inherit;
+  width: 100%;
+  text-align: center;
+}
+.footer h6{
+  color:rgba(16, 16, 16, 0.8);
+  font-weight: 300;
+}
+.footer a{
+  color:#222;
+  text-decoration: none;
+  font-weight: 500;
+  transition: all .3s ease;
+}
+.footer a:hover {
+  color: #00ace6;
+}
